@@ -1,0 +1,7 @@
+{
+  "name": "Sigesta",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
