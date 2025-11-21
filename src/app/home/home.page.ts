@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent,  IonText, IonCol, IonGrid, IonRow, IonImg   } from '@ionic/angular/standalone';
+import { IonHeader, IonToolbar, IonTitle, IonContent,  IonText, IonCol, IonGrid, IonRow, IonImg, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle  } from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-home',
@@ -8,8 +8,12 @@ import { IonHeader, IonToolbar, IonTitle, IonContent,  IonText, IonCol, IonGrid,
   imports: [
     IonHeader, IonToolbar, 
     IonTitle, IonContent, 
-    IonText, IonCol, IonGrid, IonRow, IonImg ],
+    IonText, IonCol, IonGrid, IonRow, IonImg,
+    IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle
+  
+  ],
 })
+
 export class HomePage {
   constructor() {}
   
