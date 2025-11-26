@@ -1,11 +1,19 @@
-.Card_1{
-    border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(49, 61, 47);
-    width: 50%;
-    margin: 20px auto; //se centra, no olvidar!!
+.pt2{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px;
     padding: 10px;
+}
 
-
+.Card_1{
+    padding: 10px;
+    width: 100%;    
+    margin: 0;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgb(71, 222, 44);
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
 }
 
 .Card_2{
@@ -14,7 +22,19 @@
 
 }
 
-ion-img {
-    width: 100%;;
+.Card_3{
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgb(71, 222, 44);
+    width: 50%;
+    margin: 20px auto; //se centra, no olvidar!!
+    padding: 10px;
+    //overflow: hidden;
 }
 
+.imagen_1 {
+    width: 100%;
+    // Aquí aplicas el borde que querías
+    border-radius: 30px;  
+    // Necesario para que el borde se vea en un ion-img
+    overflow: hidden; 
+}
