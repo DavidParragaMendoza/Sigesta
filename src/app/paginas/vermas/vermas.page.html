@@ -5,9 +5,10 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">vermas</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div>
+    <h2>{{producto.titulo}}</h2>
+    <p>{{producto.des}}</p>
+    <img [src]="producto.img">
+  </div>
+
 </ion-content>
