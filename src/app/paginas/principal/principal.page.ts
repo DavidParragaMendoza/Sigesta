@@ -17,8 +17,8 @@ export class PrincipalPage implements OnInit {
   productos=[
     {
       id: 1,
-      titulo: "Logo del sistema de gestion de tareas" ,
-      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, maiores officia eius, expedita ipsa?",
+      titulo: "Sistema de gestion de tareas" ,
+      des: "Sigesta es una plataforma integral diseñada para optimizar el flujo de trabajo y la organización personal. Permite crear, asignar y monitorear tareas en tiempo real, garantizando que nunca pierdas de vista tus objetivos prioritarios mediante una interfaz intuitiva y eficiente",
       img: "assets/img/Img1.png",
     },
 
@@ -31,8 +31,8 @@ export class PrincipalPage implements OnInit {
 
     {
       id: 3,
-      titulo: "Logo del sistema de gestion de tareas" ,
-      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, maiores officia eius, expedita ipsa?",
+      titulo: "Gatito panzon" ,
+      des: "Un gatito panzon a tan solo: $100",
       img: "assets/img/img2.jpg",
     },
 

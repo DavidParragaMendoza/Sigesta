@@ -1,40 +1,45 @@
-.pt2{
+.pt2 {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); 
     gap: 20px;
     padding: 10px;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
-.Card_1{
+/* --- Estilos de las Tarjetas --- */
+.Card_1 {
     padding: 10px;
     width: 100%;    
     margin: 0;
     border-radius: 30px;
-    box-shadow: 0 4px 8px rgb(71, 222, 44);
+    box-shadow: 0 4px 8px rgba(71, 222, 44, 0.5); 
     height: 100%; 
     display: flex;
     flex-direction: column;
-}
-
-.Card_2{
-    border-radius: 30px;
-    box-shadow: 0 4px 8px rgb(117, 230, 98);
-
-}
-
-.Card_3{
-    border-radius: 30px;
-    box-shadow: 0 4px 8px rgb(71, 222, 44);
-    width: 50%;
-    margin: 20px auto; //se centra, no olvidar!!
-    padding: 10px;
-    //overflow: hidden;
+    justify-content: space-between; 
 }
 
 .imagen_1 {
     width: 100%;
-    // Aquí aplicas el borde que querías
+    height: 200px; /* Le damos una altura fija a la imagen para uniformidad */
+    object-fit: cover; /* Recorta la imagen para que no se estire */
     border-radius: 30px;  
-    // Necesario para que el borde se vea en un ion-img
     overflow: hidden; 
+}
+
+/* --- Estilos de la Card 3 (La de bienvenida) --- */
+.Card_3 {
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgb(71, 222, 44);
+    margin: 20px auto; 
+    padding: 10px;
+    /* RESPONSIVIDAD AQUÍ TAMBIÉN: */
+    width: 90%; /* En celular ocupa casi todo el ancho */
+    max-width: 600px; /* En PC no pasará de 600px */
+}
+
+.Card_2 {
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgb(117, 230, 98);
 }
