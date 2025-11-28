@@ -3,13 +3,14 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { Router } from '@angular/router';
+import { HeaderGlobalComponent } from 'src/app/componentes/header-global/header-global.component';
 
 @Component({
   selector: 'app-principal',
   templateUrl: './principal.page.html',
   styleUrls: ['./principal.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule,HeaderGlobalComponent]
   ,schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 
@@ -41,6 +42,48 @@ export class PrincipalPage implements OnInit {
       titulo: "Logo del sistema de gestion de tareas" ,
       des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, maiores officia eius, expedita ipsa?",
       img: "assets/img/img3.jpg",
+    },
+
+    {
+      id: 5,
+      titulo: "Logo del sistema de gestion de tareas" ,
+      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, maiores officia eius, expedita ipsa?",
+      img: "assets/img/img3.jpg",
+    },
+
+        {
+      id: 6,
+      titulo: "Logo del sistema de gestion de tareas" ,
+      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, maiores officia eius, expedita ipsa?",
+      img: "assets/img/img3.jpg",
+    },
+
+        {
+      id: 7,
+      titulo: "Logo del sistema de gestion de tareas" ,
+      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, maiores officia eius, expedita ipsa?",
+      img: "assets/img/img3.jpg",
+    },
+
+    {
+      id: 8,
+      titulo: "Gatito panzon" ,
+      des: "Un gatito panzon a tan solo: $100",
+      img: "assets/img/img2.jpg",
+    },
+
+    {
+      id: 9,
+      titulo: "Gatito panzon" ,
+      des: "Un gatito panzon a tan solo: $100",
+      img: "assets/img/img2.jpg",
+    },
+
+    {
+      id: 10,
+      titulo: "Gatito panzon" ,
+      des: "Un gatito panzon a tan solo: $100",
+      img: "assets/img/img2.jpg",
     },
 
   ]
