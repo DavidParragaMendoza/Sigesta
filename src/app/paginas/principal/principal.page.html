@@ -1,10 +1,5 @@
-<app-header-global>
+<app-header-global >
 </app-header-global>
-
-
-
-
-
 <!-- <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>Inicio</ion-title>
@@ -13,6 +8,11 @@
 
 <ion-content [fullscreen]="true">
   <!--Bienvenidad  -->
+
+  <ion-searchbar placeholder="Busca productos" 
+  (ionInput)="filtrar($event)">
+  </ion-searchbar>
+  
   <Section >
     
     <ion-card class="Card_3">
@@ -32,7 +32,7 @@
 
 
   <section class="pt2">
-    <ion-card class="Card_1" *ngFor="let p of productos" (click)="irvermas(p)">
+    <ion-card class="Card_1" *ngFor="let p of productosFiltrados" (click)="irvermas(p)">
       <img [src]="p.img" class="imagen_1">
       <ion-card-header>
         <ion-card-title>{{p.titulo}}</ion-card-title>

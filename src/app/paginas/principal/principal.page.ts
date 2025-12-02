@@ -25,7 +25,7 @@ export class PrincipalPage implements OnInit {
 
     {
       id: 2,
-      titulo: "Lorem ipsum dolor" ,
+      titulo: "a" ,
       des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, maiores officia eius, expedita ipsa?",
       img: "assets/img/img1.jpg",
     },
@@ -39,54 +39,57 @@ export class PrincipalPage implements OnInit {
 
     {
       id: 4,
-      titulo: "Logo del sistema de gestion de tareas" ,
+      titulo: "b" ,
       des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, maiores officia eius, expedita ipsa?",
       img: "assets/img/img3.jpg",
     },
 
     {
       id: 5,
-      titulo: "Logo del sistema de gestion de tareas" ,
+      titulo: "c" ,
       des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, maiores officia eius, expedita ipsa?",
       img: "assets/img/img3.jpg",
     },
 
         {
       id: 6,
-      titulo: "Logo del sistema de gestion de tareas" ,
+      titulo: "d" ,
       des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, maiores officia eius, expedita ipsa?",
       img: "assets/img/img3.jpg",
     },
 
         {
       id: 7,
-      titulo: "Logo del sistema de gestion de tareas" ,
+      titulo: "e" ,
       des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus quasi unde illum repudiandae velit nostrum molestiae tempore nobis modi quam ipsam mollitia ut, voluptates, maiores officia eius, expedita ipsa?",
       img: "assets/img/img3.jpg",
     },
 
     {
       id: 8,
-      titulo: "Gatito panzon" ,
+      titulo: "aa" ,
       des: "Un gatito panzon a tan solo: $100",
       img: "assets/img/img2.jpg",
     },
 
     {
       id: 9,
-      titulo: "Gatito panzon" ,
+      titulo: "bb" ,
       des: "Un gatito panzon a tan solo: $100",
       img: "assets/img/img2.jpg",
     },
 
     {
       id: 10,
-      titulo: "Gatito panzon" ,
+      titulo: "cc" ,
       des: "Un gatito panzon a tan solo: $100",
       img: "assets/img/img2.jpg",
     },
 
+    
   ]
+  
+  productosFiltrados=[...this.productos];
 
   constructor(
     private router:Router
@@ -99,5 +102,25 @@ export class PrincipalPage implements OnInit {
   irvermas(producto: any){
     this.router.navigate(['/vermas'], {queryParams: producto});
   }
+
+  //funcion para filtrar los productos.
+  filtrar(event:any){
+    const texto =(event.target.value || '').toLowerCase().trim();
+
+    if (texto==='') {
+      this.productosFiltrados=[...this.productos];
+      return;
+    }
+
+    this.productosFiltrados = this.productos.filter(
+      p=>p.titulo.toLowerCase().includes(texto) 
+      //|| p.des.toLowerCase().includes(texto)
+      //||p.precio.toString
+  
+  );
+
+  }
+
+ 
 
 }

@@ -1,15 +1,10 @@
-<ion-header >
-  <div style="
-    background: linear-gradient(90deg,rgba(93, 115, 99, 1) 0%, rgba(28, 97, 51, 1) 50%, rgba(31, 133, 0, 1) 100%);
-">
-
-    <ion-toolbar >
-      <ion-buttons slot="start">
-        <img class="logo" src="assets/img/Img1.png" alt="un logo bien perro">
+<ion-header [translucent]="true" color="success">
+    <ion-toolbar>
+      <ion-buttons slot="start" (click)="regresar()" >
+        <img class="logo" src="assets/img/Img1.png" alt="un logo bien perro"   >
         <ion-title>
           Mi Tienda
         </ion-title>
       </ion-buttons>
     </ion-toolbar>
-  </div>
   </ion-header>
