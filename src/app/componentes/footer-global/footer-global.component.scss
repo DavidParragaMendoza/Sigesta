@@ -4,13 +4,7 @@
     padding: 5px;
     justify-content: center;
     justify-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    //background-color: black;
-    //background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(6, 99, 6, 1) 50%, rgba(6, 105, 26, 1) 100%);
-    //background: linear-gradient(90deg, rgba(93, 115, 99, 1) 0%, rgba(28, 97, 51, 1) 50%, rgba(31, 133, 0, 1) 100%);
-    //background: linear-gradient(90deg,rgba(10, 43, 9, 1) 0%, rgba(6, 69, 6, 1) 100%);
-
-    
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));   
 }
 
 a{
@@ -25,6 +19,5 @@ a{
     width: 100%;
     font-size: 25px;
     color: white;
-    transition: transform 0.3s;
 }
 
