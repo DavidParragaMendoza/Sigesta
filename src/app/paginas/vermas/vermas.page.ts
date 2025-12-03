@@ -1,7 +1,7 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
+import { IonContent } from '@ionic/angular/standalone';
 import { ActivatedRoute } from '@angular/router';
 import { HeaderGlobalComponent } from 'src/app/componentes/header-global/header-global.component';
 
@@ -10,7 +10,7 @@ import { HeaderGlobalComponent } from 'src/app/componentes/header-global/header-
   templateUrl: './vermas.page.html',
   styleUrls: ['./vermas.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, HeaderGlobalComponent]
+  imports: [IonContent, CommonModule, FormsModule, HeaderGlobalComponent]
   ,schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class VermasPage implements OnInit {
