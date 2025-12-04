@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 
 import { IonicModule } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer-global',
@@ -14,8 +15,22 @@ import { IonicModule } from '@ionic/angular';
 export class FooterGlobalComponent  implements OnInit {
 
   
-  constructor() { }
+  constructor(
+    private router:Router
+  ) { }
 
   ngOnInit() {}
+
+  irnosotros(){
+    this.router.navigate(['/nosotros']);
+  }
+
+  preguntas(){
+    this.router.navigate(['/preguntas']);
+  }
+
+  horarios(){
+    this.router.navigate(['/horarios']);
+  }
 
 }

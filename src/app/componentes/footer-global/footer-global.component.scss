@@ -1,7 +1,11 @@
+
 .redes{
+    border-top: 1px solid #ffffffd1;
     display: grid;
     gap: 20px;
     padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
     justify-content: center;
     justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));   
@@ -18,6 +22,8 @@ a{
 .icono-footer{
     width: 100%;
     font-size: 25px;
-    color: white;
+    margin-bottom: 9px;
+
 }
+
 
