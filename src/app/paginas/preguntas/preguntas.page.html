@@ -1,13 +1,29 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>preguntas</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header-global >
+</app-header-global>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">preguntas</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <section class="cabecera">
+    <h2>¿Preguntas frecuentes?</h2>
+    <p>
+      Aquí encontrarás respuestas a las preguntas más comunes sobre nuestros productos y servicios. Nuestro objetivo es brindarte la mejor experiencia posible, no dudes en contactarnos si necesitas más ayuda.
+
+    </p>
+
+
+  </section>
+
+  <ion-accordion-group expand="inset" class="acordion">
+    
+    <ion-accordion *ngFor="let item of preguntas; let i = index" [value]="i">
+
+      <ion-item slot="header" class="header">
+        <ion-icon [name]="item.icono" class="icono"></ion-icon>
+        <ion-label> {{item.pregunta}}</ion-label>
+      </ion-item>
+      <div class="faq-content" slot="content">{{item.respuesta}}</div>
+
+    </ion-accordion>
+  
+  </ion-accordion-group>
+
 </ion-content>
