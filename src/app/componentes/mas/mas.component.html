@@ -1,0 +1,16 @@
+<ion-header>
+    <ion-toolbal>
+        <ion-title>{{titulo}}</ion-title>
+        
+        <ion-button color="success" slot="end" (click)="cerrarModal()">
+            <ion-icon name="close-circle-outline"></ion-icon>
+        </ion-button>
+    
+    </ion-toolbal>
+</ion-header>
+
+<ion-content>
+    <div class="content_img_modal">
+        <img [src]="imagen" alt="una img" class="img_modal">
+    </div>
+</ion-content>

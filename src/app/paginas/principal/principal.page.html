@@ -28,10 +28,10 @@
 
 
   <section class="pt2">
-    <ion-card class="Card_1" *ngFor="let p of productosFiltrados" (click)="irvermas(p)">
-      <img [src]="p.img" class="imagen_1">
+    <ion-card class="Card_1" *ngFor="let p of productosFiltrados" >
+      <img [src]="p.img" class="imagen_1" (click)="ver_modal(p)">
       <ion-card-header>
-        <ion-card-title>{{p.titulo}}</ion-card-title>
+        <ion-card-title (click)="irvermas(p)">{{p.titulo}}</ion-card-title>
     </ion-card-header>
 
     <ion-card-content>{{p.des}}</ion-card-content>

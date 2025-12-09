@@ -5,6 +5,8 @@ import { IonContent} from '@ionic/angular/standalone';
 import { Router } from '@angular/router';
 import { HeaderGlobalComponent } from 'src/app/componentes/header-global/header-global.component';
 import { FooterGlobalComponent } from 'src/app/componentes/footer-global/footer-global.component';
+import { MasComponent } from 'src/app/componentes/mas/mas.component';
+import {ModalController} from '@ionic/angular/standalone'; //nuevo
 
 @Component({
   selector: 'app-principal',
@@ -162,9 +164,11 @@ export class PrincipalPage implements OnInit {
   ]
   
   productosFiltrados=[...this.productos];
+  //modalCtrl: any;
 
   constructor(
-    private router:Router
+    private router:Router,
+    private modalCtrl: ModalController, //esta linea es nueva
   ) { }
 
   ngOnInit() {
@@ -174,6 +178,8 @@ export class PrincipalPage implements OnInit {
   irvermas(producto: any){
     this.router.navigate(['/vermas'], {queryParams: producto});
   }
+
+  
 
   //funcion para filtrar los productos.
   filtrar(event:any){
@@ -192,6 +198,19 @@ export class PrincipalPage implements OnInit {
   );
 
   }
+
+  async ver_modal(producto: any){
+    const modal = await this.modalCtrl.create({
+      component: MasComponent,
+      componentProps: { imagen: producto.img, 
+        titulo: producto.titulo },
+        cssClass: 'estilo_modal'
+    });
+    await modal.present();
+    
+    
+  }
+
 
  
 
