@@ -11,6 +11,7 @@
 .Card_1 {
     padding: 10px;
     width: 100%;    
+    max-width: 320px;
     margin: 0;
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(71, 222, 44, 0.5); 
@@ -43,3 +44,63 @@
     border-radius: 30px;
     box-shadow: 0 4px 8px rgb(117, 230, 98);
 }
+
+/* --- ESTILOS PARA EL NAV (MODIFICADO) --- */
+.categorias{
+    padding: 20px 0; // Añade espacio vertical
+}
+.menu-horizontal{
+    list-style: none; // Quita los puntos de la lista
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; // Permite que los items pasen a la siguiente línea en pantallas pequeñas
+    justify-content: center;
+    gap: 15px;
+}
+
+.item_menu{
+    position: relative; // Necesario para posicionar el submenú
+    color: #fff;
+    background-color: #151515;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(71, 222, 44, 0.5); 
+    cursor: pointer; // Cambia el cursor para indicar que es interactivo
+    transition: background-color 0.3s; // Transición suave
+}
+
+.item_menu:hover {
+    background-color: #2a2a2a; // Cambia el color al pasar el ratón
+}
+
+.submenu {
+    display: none; // OCULTA el submenú por defecto
+    position: absolute; // Lo saca del flujo normal del documento
+    top: 100%; // Lo posiciona justo debajo del item_menu
+    left: 0;
+    background-color: #1c1c1c;
+    list-style: none;
+    padding: 15px 10px 10px 10px;
+    
+    border-radius: 15px;
+    min-width: 200px; // Ancho mínimo para que no se vea apretado
+    z-index: 10; // Asegura que esté por encima de otro contenido
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* MUESTRA el submenú cuando se pasa el ratón sobre el item_menu */
+.item_menu:hover .submenu {
+    display: block;
+}
+
+.subitem {
+    padding: 8px 12px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.subitem:hover {
+    background-color: #333; // Resalta la subcategoría al pasar el ratón
+}
+

@@ -1,0 +1,26 @@
+[
+    {
+        "categoria": "Memes de Animales",
+        "Subcategoria": ["Gatos", "Perros", "Pájaros", "Exóticos"]
+    },
+    {
+        "categoria": "Humor Absurdo",
+        "Subcategoria": ["Shitposting", "Surrealistas", "Imágenes sin contexto"]
+    },
+    {
+        "categoria": "Memes de Videojuegos",
+        "Subcategoria": ["PC Master Race", "Guerra de Consolas", "Retro Gaming"]
+    },
+    {
+        "categoria": "Clásicos de Internet",
+        "Subcategoria": ["Rage Comics", "Advice Animals", "Primeros Virales"]
+    },
+    {
+        "categoria": "Imágenes Random",
+        "Subcategoria": ["WTF", "Cursed Images", "Fotos Graciosas"]
+    },
+    {
+        "categoria": "Humor Negro",
+        "Subcategoria": ["Históricos", "Cotidiano", "Ficción"]
+    }
+]
