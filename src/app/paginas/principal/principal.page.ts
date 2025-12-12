@@ -9,6 +9,9 @@ import { MasComponent } from 'src/app/componentes/mas/mas.component';
 import {ModalController} from '@ionic/angular/standalone'; //nuevo
 import { HttpClient, HttpClientModule,  } from '@angular/common/http';
 
+//novo
+import { register } from 'swiper/element/bundle';
+
 
 @Component({
   selector: 'app-principal',
@@ -24,7 +27,9 @@ export class PrincipalPage implements OnInit {
   productos: any[]=[]
   productosFiltrados: any[]=[];
   categorias: any;
+  
   //modalCtrl: any;
+  
 
   constructor(
     private router:Router,
@@ -33,6 +38,8 @@ export class PrincipalPage implements OnInit {
   ) { }
 
   ngOnInit() {
+    register();
+
     this.cargarProductos();
     this.cargarCategorias();
 
@@ -101,6 +108,24 @@ export class PrincipalPage implements OnInit {
     
     
   }
+
+
+  imagenesCarrusel = [
+  'assets/img/baner_1.jpg',
+  'assets/img/baner_2.jpeg',
+  'assets/img/baner_3.jpg',
+  'assets/img/baner_4.jpg',
+  
+];
+
+slideOpts = {
+  initialSlide: 0,
+  speed: 600,
+  autoplay: {
+    delay: 3000
+  },
+  loop: true
+};
 
 
  

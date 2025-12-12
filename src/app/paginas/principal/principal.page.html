@@ -98,11 +98,23 @@
     
 </section>
 
-
+<aside>
+  <swiper-container
+    slides-per-view="1"
+    loop="true"
+    autoplay-delay="3000"
+    pagination="true"
+    class="swiper-banner"
+  >
+  <swiper-slide *ngFor="let img of imagenesCarrusel">
+    <img [src]="img" class="img-carousel" />
+  </swiper-slide>
+  </swiper-container>
+</aside>
 
 <br><br>
+
 <app-footer-global >
   
 </app-footer-global>
-
 </ion-content>
